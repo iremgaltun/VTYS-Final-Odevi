@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dmsDataSet12" targetNamespace="http://tempuri.org/dmsDataSet12.xsd" xmlns:mstns="http://tempuri.org/dmsDataSet12.xsd" xmlns="http://tempuri.org/dmsDataSet12.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dmsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dmsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.proje.Properties.Settings.GlobalReference.Default.dmsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="gorevTableAdapter" GeneratorDataComponentClassName="gorevTableAdapter" Name="gorev" UserDataComponentName="gorevTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dmsConnectionString (Settings)" DbObjectName="dms.dbo.gorev" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT kullaniciAdSoyad FROM dbo.gorev</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="kullaniciAdSoyad" DataSetColumn="kullaniciAdSoyad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dmsDataSet12" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="dmsDataSet12" msprop:Generator_DataSetName="dmsDataSet12">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="gorev" msprop:Generator_RowEvHandlerName="gorevRowChangeEventHandler" msprop:Generator_RowDeletedName="gorevRowDeleted" msprop:Generator_RowDeletingName="gorevRowDeleting" msprop:Generator_RowEvArgName="gorevRowChangeEvent" msprop:Generator_TablePropName="gorev" msprop:Generator_RowChangedName="gorevRowChanged" msprop:Generator_RowChangingName="gorevRowChanging" msprop:Generator_TableClassName="gorevDataTable" msprop:Generator_RowClassName="gorevRow" msprop:Generator_TableVarName="tablegorev" msprop:Generator_UserTableName="gorev">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kullaniciAdSoyad" msprop:Generator_ColumnPropNameInRow="kullaniciAdSoyad" msprop:Generator_ColumnPropNameInTable="kullaniciAdSoyadColumn" msprop:Generator_ColumnVarNameInTable="columnkullaniciAdSoyad" msprop:Generator_UserColumnName="kullaniciAdSoyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

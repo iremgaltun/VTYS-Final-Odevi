@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1ECC67A-B611-45CE-A9B3-28907CC2EE7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proje</RootNamespace>
+    <AssemblyName>proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProjectForm.Designer.cs">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baslangic2\Baglanti2.cs" />
+    <Compile Include="dmsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dmsDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dmsDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPageForm.Designer.cs">
+      <DependentUpon>MainPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAccountForm.Designer.cs">
+      <DependentUpon>NewAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProjectForm.Designer.cs">
+      <DependentUpon>UpdateProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewIncumbentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewIncumbentsForm.Designer.cs">
+      <DependentUpon>ViewIncumbentsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddProjectForm.resx">
+      <DependentUpon>AddProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPageForm.resx">
+      <DependentUpon>MainPageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAccountForm.resx">
+      <DependentUpon>NewAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateProjectForm.resx">
+      <DependentUpon>UpdateProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewIncumbentsForm.resx">
+      <DependentUpon>ViewIncumbentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dmsDataSet.xsc">
+      <DependentUpon>dmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet.xss">
+      <DependentUpon>dmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet1.xsc">
+      <DependentUpon>dmsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet1.xss">
+      <DependentUpon>dmsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet10.xsc">
+      <DependentUpon>dmsDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet10.xss">
+      <DependentUpon>dmsDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet11.xsc">
+      <DependentUpon>dmsDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet11.xss">
+      <DependentUpon>dmsDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet12.xsc">
+      <DependentUpon>dmsDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet12.xss">
+      <DependentUpon>dmsDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet13.xsc">
+      <DependentUpon>dmsDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet13.xss">
+      <DependentUpon>dmsDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet14.xsc">
+      <DependentUpon>dmsDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet14.xss">
+      <DependentUpon>dmsDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet15.xsc">
+      <DependentUpon>dmsDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet15.xss">
+      <DependentUpon>dmsDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet2.xsc">
+      <DependentUpon>dmsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet2.xss">
+      <DependentUpon>dmsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet3.xsc">
+      <DependentUpon>dmsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet3.xss">
+      <DependentUpon>dmsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet4.xsc">
+      <DependentUpon>dmsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet4.xss">
+      <DependentUpon>dmsDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet5.xsc">
+      <DependentUpon>dmsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet5.xss">
+      <DependentUpon>dmsDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet6.xsc">
+      <DependentUpon>dmsDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet6.xss">
+      <DependentUpon>dmsDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet7.xsc">
+      <DependentUpon>dmsDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet7.xss">
+      <DependentUpon>dmsDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet8.xsc">
+      <DependentUpon>dmsDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet8.xss">
+      <DependentUpon>dmsDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet9.xsc">
+      <DependentUpon>dmsDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="dmsDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dmsDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dmsDataSet9.xss">
+      <DependentUpon>dmsDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
